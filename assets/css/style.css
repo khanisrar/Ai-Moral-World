@@ -133,13 +133,13 @@ img {
 }
 
 .brand-name {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: 700;
     color: var(--text);
 }
 
 .brand-tagline {
-    font-size: 15.5px;
+    font-size: 15px;
     color: var(--muted);
 }
 
@@ -758,7 +758,7 @@ img {
 
     .nav-links {
         position: fixed;
-        top: 59px;
+        top: 64px;
         right: 0;
         left: 0;
         background: var(--card);
