@@ -228,7 +228,7 @@
         <form class="mf-newsletter" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="d5521f54-7b69-4c9e-983c-38c5e37be7bd">
           <label for="mf-email" class="sr-only">Email:</label>
-          <input name="email" type="email" placeholder="Your email" required>
+          <input name="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" type="email" placeholder="Your email" required>
           <button type="submit" class="mf-sub">Subscribe</button>
         </form>
 

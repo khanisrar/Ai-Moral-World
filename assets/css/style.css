@@ -133,13 +133,13 @@ img {
 }
 
 .brand-name {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--text);
 }
 
 .brand-tagline {
-    font-size: 14px;
+    font-size: 15.5px;
     color: var(--muted);
 }
 
@@ -148,6 +148,7 @@ img {
     align-items: center;
     gap: 30px;
     font-size: 14px;
+
 }
 
 .nav-links a {
@@ -505,6 +506,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .mf-copy {
@@ -715,11 +717,16 @@ img {
         height: 2.5px;
     }
 
+    #bar2 {
+        width: 80%;
+    }
+
     .nav-bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 16px;
+
 
     }
 
@@ -730,8 +737,8 @@ img {
     }
 
     .brand-logo {
-        width: 40px;
-        height: 40px;
+        width: 43px;
+        height: 43px;
         display: flex;
         align-items: center;
 
@@ -739,13 +746,13 @@ img {
     }
 
     .brand-name {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--text);
     }
 
     .brand-tagline {
-        font-size: 11px;
+        font-size: 12.3px;
         color: var(--muted);
     }
 
@@ -762,6 +769,7 @@ img {
         gap: 15px;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .3s ease-in-out;
+        border-bottom: 1px solid var(--text);
     }
 
     .menu-active #bar1 {
