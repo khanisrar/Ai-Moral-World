@@ -355,7 +355,7 @@ img {
     color: var(--text);
     padding: 42px 0;
     border-top: 1px solid var(--muted);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .mf-inner {
@@ -1090,4 +1090,36 @@ img {
         gap: 16px 30px;
         margin-top: 20px;
     }
+}
+
+/* Thin green strip */
+.udyam-strip {
+    background: #0b6b4a;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.udyam-strip-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.udyam-strip-btn {
+    background: #ffffff;
+    color: #0b6b4a;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ffffff;
+    transition: 0.2s ease-in-out;
+}
+
+.udyam-strip-btn:hover {
+    background: #e8f7f1;
+    color: #0b6b4a;
 }
