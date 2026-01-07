@@ -318,6 +318,8 @@ img {
     margin: 0 auto;
 }
 
+
+
 .demo-video video {
     width: 100%;
     height: 100%;
@@ -327,6 +329,60 @@ img {
 
 .demo-info {
     padding: 12px 14px 14px;
+}
+
+/* Toggle Buttons */
+.demo-toggle .demo-toggle-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 14px;
+}
+
+.demo-btn {
+    padding: 10px 24px;
+    border-radius: 24px;
+    border: 1px solid var(--text);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.demo-btn.active,
+.demo-btn:hover {
+    background: linear-gradient(180deg, var(--accent-light), var(--accent-light-2));
+}
+
+/* Wrapper Toggle */
+.demo-wrapper {
+    display: none;
+}
+
+.demo-wrapper.active {
+    display: block;
+}
+
+/* 16:9 override (ONLY for widescreen videos) */
+.video-16x9 {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+#horizontal .demo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* width: 100%; */
+}
+
+@media (max-width: 768px) {
+    #horizontal .demo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Optional: improve spacing on mobile */
+    /* .demo-video {
+        width: 100%;
+    } */
 }
 
 /* ===== Pricing ===== */
