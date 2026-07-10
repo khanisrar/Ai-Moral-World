@@ -296,6 +296,129 @@
           </div>
         </div>
       </section>
+      <section class="faq section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2>FAQ</h2>
+            <img src="./assets/images/head-border.png" alt="head border" />
+            <p class="muted">
+              Find answers to common questions about our services, design
+              process, project timelines, pricing, and ongoing support.
+            </p>
+          </div>
+
+          <div class="faq-wrapper">
+            <div class="faq-item active">
+              <button class="faq-question">
+                What services do you offer?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We provide AI-powered branding, website development, graphic
+                  design, social media creatives, AI advertisements, Google &
+                  Meta Ads, and complete digital marketing solutions tailored to
+                  your business.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you create custom website designs?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Every website is custom-designed to match your brand
+                  identity, business goals, and target audience. We never use
+                  generic templates for client projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Can you design a complete brand identity?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Absolutely. We create logos, brand identity systems, business
+                  stationery, marketing materials, packaging, and visual assets
+                  to build a consistent and professional brand.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you provide Google & Meta Ads services?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. We create, manage, and optimize Google Ads and Meta Ads
+                  campaigns to help businesses generate quality leads, increase
+                  traffic, and improve conversions.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What industries do you work with?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We work with startups, local businesses, restaurants, clinics,
+                  real estate companies, e-commerce brands, educational
+                  institutes, and many other industries.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Will my website be mobile-friendly?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Every website we build is fully responsive and optimized
+                  for desktop, tablet, and mobile devices to ensure the best
+                  user experience.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you provide revisions?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. All projects include revisions based on the selected
+                  package to ensure the final result meets your expectations.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                How do I get started?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Simply contact us through our website or WhatsApp. We'll
+                  discuss your requirements, recommend the best solution, and
+                  provide a customized quote for your project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section section-alt">
         <div class="container" style="text-align: center">
           <h1>Need a Custom Solution?</h1>
@@ -427,5 +550,22 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          faqItems.forEach((faq) => {
+            if (faq !== item) {
+              faq.classList.remove("active");
+            }
+          });
+
+          item.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

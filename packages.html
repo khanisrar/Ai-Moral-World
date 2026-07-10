@@ -155,6 +155,128 @@
           </div>
         </div>
       </section>
+      <section class="faq section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2>FAQ</h2>
+            <img src="./assets/images/head-border.png" alt="head border" />
+            <p class="muted">
+              Explore flexible packages designed to fit your business goals,
+              budget, and creative requirements with complete transparency.
+            </p>
+          </div>
+
+          <div class="faq-wrapper">
+            <div class="faq-item active">
+              <button class="faq-question">
+                Which package is right for my business?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our packages are designed for businesses of all sizes. If
+                  you're unsure which one fits your needs, we'll help you choose
+                  the best option based on your goals and budget.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I customize a package?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. All packages can be customized by adding or removing
+                  services to match your specific business requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What's included in your packages?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Depending on the package, services may include branding, logo
+                  design, website development, graphic design, AI
+                  advertisements, social media creatives, and digital marketing
+                  solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you offer revisions?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Every package includes a set number of revisions to
+                  ensure the final deliverables meet your expectations.
+                  Additional revisions can also be requested if needed.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What is your payment process?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We typically require an advance payment before starting the
+                  project, with the remaining balance due upon completion or
+                  according to the agreed project milestones.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                How long does project delivery take?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Delivery timelines vary depending on the selected package and
+                  project scope. Most projects are completed within a few
+                  business days to two weeks.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Will I receive the source files?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Source files and final project assets are provided
+                  according to the selected package and agreed deliverables.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you provide support after project completion?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. We offer post-project support and guidance to help you
+                  launch, manage, and maintain your branding, website, or
+                  marketing assets smoothly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Final CTA -->
       <section class="section" id="ptop0">
         <div class="container final-cta card">
@@ -279,5 +401,22 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          faqItems.forEach((faq) => {
+            if (faq !== item) {
+              faq.classList.remove("active");
+            }
+          });
+
+          item.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

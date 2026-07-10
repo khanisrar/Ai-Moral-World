@@ -2385,42 +2385,86 @@ WhatsApp Invitation
   }
 }
 
-/*============================
-Invitation Video
-============================*/
-
-.video-wrapper {
-  display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 60px;
-  align-items: center;
-  margin-top: 50px;
+.faq-wrapper {
+  max-width: 100%;
+  margin: auto;
 }
 
-.video-content h3 {
-  font-size: 34px;
-  margin-bottom: 20px;
-}
-
-.video-content p {
-  line-height: 1.9;
-  opacity: 0.75;
-}
-
-.video-player {
-  border-radius: 20px;
+.faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  margin-bottom: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  box-shadow: var(--shadow-soft);
 }
 
-.video-player video {
+.faq-item:hover {
+  border-color: hsla(175, 96%, 54%, 0.4);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.faq-question {
   width: 100%;
-  display: block;
-  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 24px;
+  border: none;
+  background: #fff;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
 }
 
-@media (max-width: 992px) {
-  .video-wrapper {
-    grid-template-columns: 1fr;
-  }
+.faq-question span {
+  font-size: 28px;
+  color: #0f172a;
+  transition: 0.3s;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+  padding: 0 24px 24px;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 250px;
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
+  color: var(--accent);
+}
+
+.faq-item.active {
+  border-color: hsla(175, 96%, 54%, 0.5);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1),
+    hsla(175, 96%, 54%, 0.04)
+  );
+
+  box-shadow:
+    0 12px 30px rgba(15, 23, 42, 0.08),
+    0 0 0 3px rgba(37, 234, 212, 0.08);
+}
+
+.faq-item.active .faq-question {
+  color: var(--text);
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
+  color: var(--accent);
 }

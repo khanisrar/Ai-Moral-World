@@ -367,6 +367,86 @@
           </div>
         </div>
       </section>
+      <section class="faq section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2>FAQ</h2>
+            <img src="./assets/images/head-border.png" alt="head border" />
+            <p class="muted">
+              Find answers to the most common questions about our services,
+              process, pricing, and project delivery.
+            </p>
+          </div>
+
+          <div class="faq-wrapper">
+            <div class="faq-item active">
+              <button class="faq-question">
+                What services does AI Moral World provide?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We offer AI Branding, Website Development, Graphic Design,
+                  Social Media Creatives, AI Advertisements, Google & Meta Ads,
+                  and complete business branding solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How long does a project take?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Most projects are completed within 3–15 business days,
+                  depending on the scope and requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you create custom website designs?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Every website is custom-designed to match your brand,
+                  business goals, and target audience.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you provide Google & Meta Ads management?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. We create, optimize, and manage high-performing Google
+                  Ads and Meta Ads campaigns to generate quality leads.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How can I start a project?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Simply contact us through our Contact page or WhatsApp. We'll
+                  discuss your requirements and recommend the best solution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="udyam-strip">
@@ -480,5 +560,22 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          faqItems.forEach((faq) => {
+            if (faq !== item) {
+              faq.classList.remove("active");
+            }
+          });
+
+          item.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

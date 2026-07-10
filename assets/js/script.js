@@ -102,3 +102,5 @@ modal.onclick = (e) => {
     modal.style.display = "none";
   }
 };
+
+document.addEventListener("DOMContentLoaded", () => {});
