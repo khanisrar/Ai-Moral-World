@@ -1,39 +1,118 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://aimoralworld.com/</loc>
-	<lastmod>2025-11-26T08:14:57+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://aimoralworld.com/services</loc>
-	<lastmod>2025-11-26T08:14:57+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://aimoralworld.com/demos</loc>
-	<lastmod>2025-11-26T08:14:57+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://aimoralworld.com/pricing</loc>
-	<lastmod>2025-11-26T08:14:57+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://aimoralworld.com/blog</loc>
-	<lastmod>2025-11-26T08:14:57+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://aimoralworld.com/contact</loc>
-	<lastmod>2025-11-26T08:14:57+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://aimoralworld.com/policy</loc>
-	<lastmod>2025-11-26T08:14:57+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://aimoralworld.com/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/about.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/services.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/packages.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/contact.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/policy.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Portfolio Projects -->
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-ai-ads-video.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-business-website.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-google-meta-ads.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-restaurant.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-real-estate.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-wedding.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-jewellery.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-clinic.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimoralworld.com/portfolio/project-festival.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
