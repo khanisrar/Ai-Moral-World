@@ -2537,6 +2537,10 @@ WhatsApp Invitation
   margin-bottom: 40px;
   overflow: hidden;
   position: relative;
+  /* background: red; */
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .trust-bar::before,
@@ -2588,6 +2592,7 @@ WhatsApp Invitation
   background: #fff;
   border: 1px solid #e2e8f0;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+  box-shadow: var(--shadow-soft);
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
@@ -2595,7 +2600,7 @@ WhatsApp Invitation
 }
 
 .trust-badge:hover {
-  /* transform: translateY(-3px); */
+  transform: translateY(-3px);
 
   border-color: var(--accent);
 }
