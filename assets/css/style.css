@@ -31,8 +31,10 @@
   --text: #0f172a;
   --muted: #6b7280;
   --accent: #152343;
-  --accent-light: hsla(175, 96%, 54%, 0.6);
-  --accent-light-2: hsla(84, 88%, 62%, 0.6);
+  /* --accent-light: hsla(175, 96%, 54%, 0.6);
+  --accent-light-2: hsla(84, 88%, 62%, 0.6); */
+  --accent-light: rgba(46, 143, 247, 0.4);
+  --accent-light-2: rgba(56, 201, 138, 0.4);
   --border-soft: rgba(15, 23, 42, 0.08);
   --radius-lg: 7px;
   --radius-md: 5px;
@@ -88,10 +90,15 @@ img {
 
 .section-alt {
   /* background: #25f8ce14; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     hsla(168, 94%, 56%, 0.05),
     hsla(84, 88%, 62%, 0.05)
+  ); */
+  background: linear-gradient(
+    180deg,
+    rgba(46, 143, 247, 0.05),
+    rgba(56, 201, 138, 0.05)
   );
 }
 
@@ -196,7 +203,7 @@ img {
 
 /* ===== Hero ===== */
 .hero {
-  padding: 80px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 .hero-grid {
@@ -213,7 +220,7 @@ img {
 
 .hero-text h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 44px;
   line-height: 1.1;
 }
 .hero-text h2 {
@@ -222,7 +229,7 @@ img {
   font-style: italic;
 }
 .hero-text p {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--muted);
   max-width: 600px;
   margin: 0 auto;
@@ -234,7 +241,7 @@ img {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .hero-actions a i {
   margin-right: 6px;
@@ -844,8 +851,8 @@ img {
   padding: 32px 0 16px;
   background: linear-gradient(
     180deg,
-    hsla(168, 94%, 56%, 0.5),
-    hsla(84, 88%, 62%, 0.5)
+    var(--accent-light),
+    var(--accent-light-2)
   );
 }
 
@@ -2532,91 +2539,102 @@ WhatsApp Invitation
   Trust Marquee
 =========================*/
 
-.trust-bar {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  overflow: hidden;
-  position: relative;
-  /* background: red; */
-  height: 60px;
+.hero {
+  /* padding: 40px 0 0px; */
+}
+
+.hero-content {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+.hero-actions {
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.trust-bar::before,
-.trust-bar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 80px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+
+  /* animation: float 5s ease-in-out infinite; */
 }
 
-.trust-bar::before {
-  left: 0;
-  background: linear-gradient(to right, #fff, transparent);
-}
-
-.trust-bar::after {
-  right: 0;
-  background: linear-gradient(to left, #fff, transparent);
-}
-
-.trust-track {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  width: max-content;
-
-  animation: trustScroll 28s linear infinite;
-}
-
-.trust-bar:hover .trust-track {
-  animation-play-state: paused;
-}
-
-.trust-badge {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  white-space: nowrap;
-  padding: 12px 22px;
-  border-radius: 999px;
-  background: linear-gradient(
-    180deg,
-    var(--accent-light),
-    var(--accent-light-2)
-  );
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
-  box-shadow: var(--shadow-soft);
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text);
-  transition: 0.3s;
-}
-
-.trust-badge:hover {
-  transform: translateY(-3px);
-
-  border-color: var(--accent);
-}
-
-.trust-badge i {
-  color: var(--accent);
-
-  font-size: 16px;
-}
-
-@keyframes trustScroll {
-  from {
-    transform: translateX(0);
+/* @keyframes float {
+  0% {
+    transform: translateY(0);
   }
 
-  to {
-    transform: translateX(-50%);
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+.trust-bar {
+  display: grid;
+  /* background: red; */
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.trust-bar img {
+  width: 100px;
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-image {
+    display: none;
+  }
+  .hero-text {
+    flex: 1;
+    text-align: center;
+  }
+
+  .trust-bar {
+    display: grid;
+    /* background: red; */
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text p {
+    font-size: 16px;
   }
 }
