@@ -2220,7 +2220,11 @@ Deliverables
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 20px;
-  background: #f5f5f5;
+  background: linear-gradient(
+    180deg,
+    var(--accent-light),
+    var(--accent-light-2)
+  );
 }
 
 .deliverable-card h3 {
