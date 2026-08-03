@@ -761,6 +761,71 @@ img {
   opacity: 1;
   transform: translateX(0);
 }
+.btn-outline-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 5px 20px;
+  border-radius: 999px;
+
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  min-width: 230px;
+}
+
+.btn-outline-2::after {
+  content: "→";
+  font-size: 24px;
+  /* font-weight: 900; */
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  position: relative;
+  top: -1px;
+}
+
+/* .btn:hover {
+  transform: translateY(-4px);
+} */
+
+.btn-outline-2:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+.btn-outline-2 {
+  gap: 0;
+}
+
+.btn-outline-2::after {
+  content: "→";
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-2:hover {
+  gap: 8px;
+  background: linear-gradient(
+    180deg,
+    var(--accent-light),
+    var(--accent-light-2)
+  );
+}
+
+.btn-outline-2:hover::after {
+  width: 24px;
+  opacity: 1;
+  transform: translateX(0);
+}
 .btn-2 {
   display: inline-flex;
   align-items: center;
@@ -1453,7 +1518,7 @@ img {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 
 .service-card {
@@ -1490,7 +1555,7 @@ img {
 }
 
 .service-content {
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 30px 20px;
   display: flex;
   flex-direction: column;
   flex: 1;
