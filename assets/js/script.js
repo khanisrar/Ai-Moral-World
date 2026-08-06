@@ -7,20 +7,20 @@ window.addEventListener("scroll", function () {
   document.body.classList.remove("menu-active");
 });
 
-let prevScrollpos = window.pageYOffset;
+// let prevScrollpos = window.pageYOffset;
 
-window.addEventListener("scroll", function () {
-  const nav = document.querySelector(".site-header");
-  if (nav) {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      nav.classList.remove("hide-site-header");
-    } else {
-      nav.classList.add("hide-site-header");
-    }
-    prevScrollpos = currentScrollPos;
-  }
-});
+// window.addEventListener("scroll", function () {
+//   const nav = document.querySelector(".site-header");
+//   if (nav) {
+//     let currentScrollPos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollPos) {
+//       nav.classList.remove("hide-site-header");
+//     } else {
+//       nav.classList.add("hide-site-header");
+//     }
+//     prevScrollpos = currentScrollPos;
+//   }
+// });
 
 const demoBtns = document.querySelectorAll(".demo-btn");
 const demoWrappers = document.querySelectorAll(".demo-wrapper");

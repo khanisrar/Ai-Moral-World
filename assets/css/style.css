@@ -2768,3 +2768,104 @@ WhatsApp Invitation
     grid-template-columns: 1fr;
   }
 }
+
+/* Floating CTA */
+
+.floating-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 0 12px 35px rgba(46, 142, 247, 0.18);
+  border: 1px solid #e9eef6;
+  z-index: 999;
+  transition: 0.35s ease;
+  animation: floatCTA 3s ease-in-out infinite;
+}
+
+.floating-cta:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 20px 45px rgba(46, 142, 247, 0.28);
+}
+
+.cta-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2e8ef7, #38c98a);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-content small {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 2px;
+}
+.cta-content strong {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.cta-content strong {
+  font-size: 16px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+@keyframes floatCTA {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    right: 10px;
+    bottom: 10px;
+    justify-content: center;
+    border-radius: 16px;
+    gap: 8px;
+    padding: 10px 12px;
+    width: fit-content;
+  }
+
+  .cta-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .cta-content small {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 0px;
+  }
+  .cta-content strong {
+    font-size: 14px;
+    color: #0f172a;
+    font-weight: 700;
+  }
+}
